@@ -6,161 +6,318 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation for Sites</title>
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/Estilo.css">
   </head>
   <body>
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-          <h1>Welcome to Foundation</h1>
-        </div>
-      </div>
+    <header class="top-bar">
+      <nav class="top-bar-left">
+      <ul class="menu" aria-label="Navegación del Comercio">
+          <li class="menu-text " style="color: #ffffff;">Supermercado</li>
+          <li><a href>Productos</a></li>
+          <li><a href>Categorías</a></li>
+      </ul>
+  </nav>
+  <nav class="top-bar-right">
+      <ul class="menu" aria-label="Nagevagación de tu Cuenta">
+          <li><a href>Crea Cuenta</a></li>
+          <li><a href>Iniciar</a></li>
+      </ul>
+  </nav>
 
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-          <div class="callout">
-            <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-            <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-            <p>Once you've exhausted the fun in this document, you should check out:</p>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 cell">
-                <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-              </div>
-              <div class="large-4 medium-4 cell">
-                <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-              </div>
-              <div class="large-4 medium-4 cell">
-                <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 medium-push-2 cell">
-                <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-              </div>
-              <div class="large-4 medium-4 medium-pull-2 cell">
-                <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    </header>
 
-      <div class="grid-x grid-padding-x">
-        <div class="large-8 medium-8 cell">
-          <h5>Here&rsquo;s your basic grid:</h5>
-          <!-- Grid Example -->
+    <main>
+      <section class="orbit" data-orbit role="region">
+        <ul class="orbit-container">
+            <button class="orbit-previous"><span class="show-for-sr">Anterior</span>&#9664;</button>
+            <button class="orbit-next"><span class="show-for-sr">Siguiente</span>&#9654;</button>
+            <li class="orbit-slide is-active text-center">
+                <figure class="orbit-figure">
+                    <picture>
+                      <img src="/Imgs/BanerDeLeche.jpg" alt="PlaceHolder Img 1" style="height: 315px; width: 600px;" />
+                    </picture>
+                </figure>
+                    <figcaption class="orbit-caption">Encontraras de todo</figcaption>
+                </figure>
+            </li>
+            <li class="orbit-slide">
+                <figure class="orbit-figure text-center">
+                    <picture>
+                        <img src="/Imgs/BannerDeFrutas.jpg" alt="PlaceHolder Img 2" style="height: 315px; width: 600px;" />
+                    </picture>
+                    <figcaption class="orbit-caption">Frutas Frescas</figcaption>
+                </figure>
+            </li>
+            <li class="orbit-slide">
+                <figure class="orbit-figure text-center">
+                    <picture>
+                        <img src="/Imgs/Banner.png" alt="PlaceHolder Img 3" style="height: 315px; width: 600px;" />
+                    </picture>
+                    <figcaption class="orbit-caption">Ven y refrescate un poco</figcaption>
+                </figure>
+            </li>
+        </ul>
+        <nav class="orbit-bullets">
+            <button class="is-active" data-slide="0">
+              <span class="show-for-sr">Primer Slide</span>
+            </button>
+            <button data-slide="1">
+              <span class="show-for-sr">Segundo Slide</span>
+            </button>
+            <button data-slide="2">
+              <span class="show-for-sr">Tercer Slide</span>
+            </button>
+        </nav>
+    </section>
 
-          <div class="grid-x grid-padding-x">
-            <div class="large-12 cell">
-              <div class="primary callout">
-                <p><strong>This is a twelve cell section in a grid-x.</strong> Each of these includes a div.callout element so you can see where the cell are - it's not required at all for the grid.</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-          </div>
+    <section class="grid-container text-center margin-top-3">
+      <h2>Alacena</h2>
+      <hr/>
+      <div class="grid-x grid-margin-x small-up-2 large-up-4">
+          <div class="cell">
+              <div class="card shadow">
+                  <img class="card-image" src="/Imgs/Zucaritas.jpg" />
+                  <div class="card-divider">KELLOGG CEREAL CHOCO ZUCARITAS MAL 260GR</div>
+                  <div class="card-section">
 
-          <hr />
-
-          <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-          <form>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-12.cell" />
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <div class="grid-x">
-                  <label>Input Label</label>
-                  <div class="input-group">
-                    <input type="text" placeholder="small-9.cell" class="input-group-field" />
-                    <span class="input-group-label">.com</span>
+                      <div class="text-right margin-bottom-1"><strong>L80.00</strong></div>
+                      <div><a href class="button expanded">Comprar</a></div>
                   </div>
-                </div>
               </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Select Box</label>
-                <select>
-                  <option value="husker">Husker</option>
-                  <option value="starbuck">Starbuck</option>
-                  <option value="hotdog">Hot Dog</option>
-                  <option value="apollo">Apollo</option>
-                </select>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-6 medium-6 cell">
-                <label>Choose Your Favorite</label>
-                <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-                <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-              </div>
-              <div class="large-6 medium-6 cell">
-                <label>Check these out</label>
-                <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-                <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Textarea Label</label>
-                <textarea placeholder="small-12.cell"></textarea>
-              </div>
-            </div>
-          </form>
-        </div>
-
-        <div class="large-4 medium-4 cell">
-          <h5>Try one of these buttons:</h5>
-          <p><a href="#" class="button">Simple Button</a><br/>
-          <a href="#" class="success button">Success Btn</a><br/>
-          <a href="#" class="alert button">Alert Btn</a><br/>
-          <a href="#" class="secondary button">Secondary Btn</a></p>
-          <div class="callout">
-            <h5>So many components, girl!</h5>
-            <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-            <a href="http://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>
           </div>
-        </div>
+          <div class="cell">
+              <div class="card shadow">
+                  <img class="card-image" src="/Imgs/LechaCondensada.jpg" />
+                  <div class="card-divider">LECHE LA LECHERA CONDENSADA 395GR</div>
+                  <div class="card-section">
+
+                      <div class="text-right margin-bottom-1"><strong>L30.00</strong></div>
+                      <div><a href class="button expanded">Comprar</a></div>
+                  </div>
+              </div>
+          </div>
+          <div class="cell">
+              <div class="card shadow">
+                  <img class="card-image" src="/Imgs/Bonotoneta.jpg" />
+                  <div class="card-divider">BOTONETAS CHOCOLATE BEST 156 GR 12 BOLS</div>
+                  <div class="card-section">
+
+                      <div class="text-right margin-bottom-1"><strong>L25.00</strong></div>
+                      <div><a href class="button expanded">Comprar</a></div>
+                  </div>
+              </div>
+          </div>
+          <div class="cell">
+              <div class="card shadow">
+                  <img class="card-image" src="/Imgs/BonoBon.jpg" />
+                  <div class="card-divider">BOMBONES ARCOR BON O BON BLANCO 90GR</div>
+                  <div class="card-section">
+
+                      <div class="text-right margin-bottom-1"><strong>L40.00</strong></div>
+                      <div><a href class="button expanded ">Comprar</a></div>
+                  </div>
+              </div>
+          </div>
       </div>
+  </section>
+
+  <section class="grid-container text-center margin-top-3">
+    <h2>Carnes, Pescados y Mariscos</h2>
+    <hr/>
+    <div class="grid-x grid-margin-x small-up-2 large-up-4">
+        <div class="cell">
+            <div class="card shadow">
+                <img class="card-image" src="/Imgs/CarneMolida.png" />
+                <div class="card-divider">MOLIDA CERDO PREMI PROG FRES GRA LB</div>
+                <div class="card-section">
+
+                    <div class="text-right margin-bottom-1"><strong>L60.00</strong></div>
+                    <div><a href class="button expanded">Comprar</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="cell">
+            <div class="card shadow">
+                <img class="card-image" src="/Imgs/ChuletaCerdo.jpg" />
+                <div class="card-divider">CHULETA CERDO AHUM. EUROPEA FRES GRA LB</div>
+                <div class="card-section">
+
+                    <div class="text-right margin-bottom-1"><strong>L80.00</strong></div>
+                    <div><a href class="button expanded">Comprar</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="cell">
+            <div class="card shadow">
+                <img class="card-image" src="/Imgs/Filete.jpg" />
+                <div class="card-divider">FILETE BASSA MYM CONG. GRAN LB</div>
+                <div class="card-section">
+
+                    <div class="text-right margin-bottom-1"><strong>L90.00</strong></div>
+                    <div><a href class="button expanded">Comprar</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="cell">
+            <div class="card shadow">
+                <img class="card-image" src="/Imgs/LomoDeCerdo.jpg" />
+                <div class="card-divider">LOMO CERDO PROG. FRESCO GRANEL LB</div>
+                <div class="card-section">
+
+                    <div class="text-right margin-bottom-1"><strong>L80.00</strong></div>
+                    <div><a href class="button expanded ">Comprar</a></div>
+                </div>
+            </div>
+        </div>
     </div>
+</section>
+
+<section class="grid-container text-center margin-top-3">
+  <h2>Electronica</h2>
+  <hr/>
+  <div class="grid-x grid-margin-x small-up-2 large-up-4">
+      <div class="cell">
+          <div class="card shadow">
+              <img class="card-image" src="/Imgs/Impresora.png" />
+              <div class="card-divider">MULTIFUNCIONAL EPSON L3110 ECOTANK</div>
+              <div class="card-section">
+
+                  <div class="text-right margin-bottom-1"><strong>L3600.00</strong></div>
+                  <div><a href class="button expanded">Comprar</a></div>
+              </div>
+          </div>
+      </div>
+      <div class="cell">
+          <div class="card shadow">
+              <img class="card-image" src="/Imgs/Laptop.jpg" />
+              <div class="card-divider">LAPTOP HP 14 CI3 1005G1 4GB 1TB JET</div>
+              <div class="card-section">
+
+                  <div class="text-right margin-bottom-1"><strong>L14000.00</strong></div>
+                  <div><a href class="button expanded">Comprar</a></div>
+              </div>
+          </div>
+      </div>
+      <div class="cell">
+          <div class="card shadow">
+              <img class="card-image" src="/Imgs/Cafetera.jpg" />
+              <div class="card-divider">BLACK A DECKER CAFETERA FILTRO PERM 10TZ</div>
+              <div class="card-section">
+
+                  <div class="text-right margin-bottom-1"><strong>L300.00</strong></div>
+                  <div><a href class="button expanded">Comprar</a></div>
+              </div>
+          </div>
+      </div>
+      <div class="cell">
+          <div class="card shadow">
+              <img class="card-image" src="/Imgs/Estufa.png" />
+              <div class="card-divider">COCINA GAS 30 NEGRA DURABRAND</div>
+              <div class="card-section">
+
+                  <div class="text-right margin-bottom-1"><strong>L3000.00</strong></div>
+                  <div><a href class="button expanded ">Comprar</a></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="grid-container text-center margin-top-3">
+  <h2>Frutas</h2>
+  <hr/>
+  <div class="grid-x grid-margin-x small-up-2 large-up-4">
+      <div class="cell">
+          <div class="card shadow">
+              <img class="card-image" src="/Imgs/Uva.png" />
+              <div class="card-divider">UVA GLOBO ROJA LIBRA</div>
+              <div class="card-section">
+
+                  <div class="text-right margin-bottom-1"><strong>L60.00</strong></div>
+                  <div><a href class="button expanded">Comprar</a></div>
+              </div>
+          </div>
+      </div>
+      <div class="cell">
+          <div class="card shadow">
+              <img class="card-image" src="/Imgs/Naranja.jpg" />
+              <div class="card-divider">NARANJA CLASIFICADA RED</div>
+              <div class="card-section">
+
+                  <div class="text-right margin-bottom-1"><strong>L40.00</strong></div>
+                  <div><a href class="button expanded">Comprar</a></div>
+              </div>
+          </div>
+      </div>
+      <div class="cell">
+          <div class="card shadow">
+              <img class="card-image" src="/Imgs/Chile.jpg" />
+              <div class="card-divider">CHILE PIMIENTO 2 LBS PAQ </div>
+              <div class="card-section">
+
+                  <div class="text-right margin-bottom-1"><strong>L60.00</strong></div>
+                  <div><a href class="button expanded">Comprar</a></div>
+              </div>
+          </div>
+      </div>
+      <div class="cell">
+          <div class="card shadow">
+              <img class="card-image" src="/Imgs/Culantro.jpg" />
+              <div class="card-divider">CULANTRO PATA EA</div>
+              <div class="card-section">
+
+                  <div class="text-right margin-bottom-1"><strong>L30.00</strong></div>
+                  <div><a href class="button expanded ">Comprar</a></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="grid-container text-center margin-top-3">
+  <h2>Nueva Normalidad</h2>
+  <hr/>
+  <section class="grid-x small-up-1 grid-margin-x medium-up-2 large-up-4">
+      <div class="cell media-object">
+          <div class="media-object-section">
+              <img alt="temporada" src="/Imgs/CajaMascarilla.png"  style="height: 100px; width: 100px;" />
+          </div>
+          <div class="media-object-section">
+              <p>Pruebas de COVID-19 en casa.</p>
+          </div>
+      </div>
+      <div class="cell media-object">
+          <div class="media-object-section">
+              <img alt="temporada" src="/Imgs/Doctor.png" style="height: 100px; width: 100px;" />
+          </div>
+          <div class="media-object-section">
+              <p> Vacuna de COVID 19.</p><a>Ver mas informacion </a>
+              
+
+          </div>
+      </div>
+      <div class="cell media-object">
+          <div class="media-object-section">
+              <img alt="temporada" src="/Imgs/Familia.png" style="height: 100px; width: 100px;" />
+          </div>
+          <div class="media-object-section">
+              <p>Picks de seguridad con rutina Mascaras, desinfectantes y mas. </p>
+          </div>
+      </div>
+      <div class="cell media-object">
+          <div class="media-object-section">
+              <img alt="temporada" src="/Imgs/Carro.jpg" style="height: 100px; width: 100px;"/>
+          </div>
+          <div class="media-object-section">
+              <p>Servicios sin contacto protegemos tu familia.</p>
+          </div>
+      </div>
+</section>
+    </main>
+
+    <footer class="text-center" style="height: 7vh; background-color: #041f41; color: #ffffff;">
+      © 2021, Supermercado Honduras. Todos los derechos Reservados.
+    </footer>
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/what-input/dist/what-input.js"></script>
